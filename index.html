@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+     
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5JCVW92');</script>
+     
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"a15eea141f","applicationID":"34637091","transactionName":"YlBTMkZUWUsHURVfXFsacDVkGlZIFh0VU15FWVASUUYYXwNcBERaVhtQFURN","queueTime":0,"applicationTime":39,"ttGuid":"8E4A0BEBA2ABA61E","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><title>
+	Tiling &amp; Adhesives - Home
+</title><meta id="ctl00_ctl00_description" name="description" /><meta id="ctl00_ctl00_keywords" name="keywords" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link id="ctl00_ctl00_ApplicationRoot" rel="home" href="index.html" />
+
+    <!-- favicon -->
+    <link rel="icon" 
+      type="image/png" 
+      href="http://www.tilingadhesivesolutions.co.ke/logo.png">
+        
+        <link href="../fonts.googleapis.com/css165e.css?family=Open+Sans|Raleway:400,700" rel="stylesheet">
+        
+        <link rel="stylesheet" href="App/dist/css/main.min28e3.css?v=636259777696745608" type="text/css" />
+    
+    
+
+
+    </head>
+<body>
+     
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JCVW92"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+     
+    <form method="post" action="https://www.tilingadhesivesolutions.co.ke/" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="__CMSCsrfToken" id="__CMSCsrfToken" value="JVezVp56k/eprEdojovRA7Vg/+MbDol6ID3Y5D9Npcq0plFY1spMiE/TMplstIaFl9NcNTEFaVNpze7n35LD5EV3Jw+MejDCIMiyv1OSZYY=" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="2oySSpX9BFEf30dZMCUhElmqA+zMPQqDIr7aJq309MwaNnu8dH821KeFK9DTKRS4JWdaKpiLZ9sJuSfezY9iy8quMoJ7jzI8pcSiKG65j5AERRXSzd6XX7y7rf06BfC4tgFD+VvrHr5Ezg3lGzlv60+tgeRy4CYyMzEntlRAQU2XU7636bAbF0iD6D7HNLINd4Ank4/f7R+KVVXdiN7zGQ8EWbfyp66dCnD9eYB1ERkHWJq0s4qwsbOEI/HQJuUx6IebyNOzBVQC9JmMDgsJ2sGCnu6v6jFdBSvlXRRl5ROTWydRUUs+eAWkcmnLMfhFZbxYDBQVqgWMn0ZDObVhwoC/gH09SYVsERtXxKk303B/mODu0yl7zqdrz9cnfJQgJnMDOxmasoQMQ5NhqhUi/d8WeVfUzpSDHW2et7Nb6W5tre1EMYTmQHyI6tP9R7gaDhEEz9Urb7Ysj/cDv1eH8w5t1sltL+3CKX5vgVKary23jS37IGCqTDmezkOipElRAkAdSuEA38mI6xYE78Ssn5CzXsEO6o3lvLsYmD1IIRA=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource8999.js?d=pynGkmcFUV13He1Qd6_TZKgqU9qUdzJWiQe1mq_QTPzx1gjljg-Q3x_HaKTfSDVxVtjnV3AX2h6bo8w6SoEPeg2&amp;t=635875509181218729" type="text/javascript"></script>
+
+<input type="hidden" name="lng" id="lng" value="en-US" />
+<script src="CMSPages/WebServiceCall2bfa.js?scriptfile=%7e%2fCMSScripts%2fWebServiceCall.js" type="text/javascript"></script>
+<script type="text/javascript">
+	//<![CDATA[
+
+function PM_Postback(param) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); } if(window.CMSContentManager) { CMSContentManager.allowSubmit = true; }; __doPostBack('ctl00$ctl00$manPortal$am',param); }
+function PM_Callback(param, callback, ctx) { if (window.top.HideScreenLockWarningAndSync) { window.top.HideScreenLockWarningAndSync(1080); }if (window.CMSContentManager) { CMSContentManager.storeContentChangedStatus(); };WebForm_DoCallback('ctl00$ctl00$manPortal$am',param,callback,ctx,null,true); }
+//]]>
+</script>
+<script type="text/javascript">
+	//<![CDATA[
+
+var CMS = CMS || {};
+CMS.Application = {
+  "isRTL": "false",
+  "isDebuggingEnabled": false,
+  "applicationUrl": "/",
+  "imagesUrl": "/CMSPages/GetResource.ashx?image=%5bImages.zip%5d%2f",
+  "isDialog": false
+};
+
+//]]>
+</script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9A4328F7" />
+</div>
+        <div>
+            
+            
+            
+    
+    
+
+<div id="header-nav">
+    <div class="container text-right utility-nav hidden-xs hidden-sm">
+        <b>Tel:</b> +254714362324 / +254798688705
+    </div>
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="App/Images/logo.png" /></a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-nav">
+                <ul class="nav navbar-nav">
+                    
+                            <li>
+                                <a href="products.html">Products</a>
+                            </li>
+                        
+                            <li>
+                                <a href="knowledge-center.html">Knowledge Center</a>
+                            </li>
+                        
+                            <li>
+                                <a href="project-planner.html">Project Planner</a>
+                            </li>
+                        
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                        
+                            <li>
+                                <a href="schedule-a-consultation.html">Schedule a Consultation</a>
+                            </li>
+                        
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <div id="main-wrapper">
+        
+    
+            
+
+<div class="hero hero-home"
+    style="background-image: url(CMSPages/marble-granite-bdc-shoot-0004-4_5ef6f.jpg?path=~%5Cmarbleandgranite%5Cmedia%5Cmgimages%5Cedited_hero_images%5Cmarble-granite-bdc-shoot-0004-4_5.jpg&amp;hash=053fa7266c56ed9d73a6973ac7aead6aff32628246c04b0cf73a0d8efacd1c2f&amp;ext=.jpg);">
+    <div class="container">
+        <h1 style="text-align: center;">ELEVATE YOUR EVERYDAY</h1>
+
+<div style="text-align: center;"><br />
+<a class="btn light large" href="products.html">Explore Our Product Selection</a></div>
+
+    </div>
+</div>
+
+
+
+<div class="row-fluid content-row white has-content">
+    <div class="container">
+        
+        <div style="text-align: center;">For over 25 years, we have been importing first-class stone from around the world. 
+Our ownership and&nbsp;team members in Kenya and Turkey travel around the globe to source and hand-select quality materials. 
+We are always on the leading or cutting edge of design, and strive to satisfy the most discriminating tastes.<br />
+<br />
+We are dedicated to offering unparalleled quality and service to homeowners, designers, architects, and fabricators while using
+ the latest technologies. Using our online Project Planner, you can find the perfect stone for your project today by simply 
+answering a few questions about your project.<br />
+<a class="btn large" href="project-planner/index.html">Project Planner</a><br />
+or <a href="schedule-a-consultation.html">Schedule a Consultation</a></div>
+
+        
+    </div>
+</div>
+
+
+
+<div class="row-fluid content-row white has-content">
+    <div class="container">
+        
+        <div style="text-align: center;">
+<table border="1" cellpadding="1" cellspacing="1" style="width:100%;">
+	<tbody>
+		<tr>
+			<td><span class="bordered-img"><img alt="" src="getattachment/Home/_MG_1196c780.jpg?lang=en-US&amp;width=300&amp;height=199" style="width: 300px; height: 199px;" /></span></td>
+			<td><span class="bordered-img"><img alt="" src="getattachment/Home/_MG_1492c780.jpg?lang=en-US&amp;width=300&amp;height=199" style="width: 300px; height: 199px;" /></span>
+			<div style="text-align: center;">&nbsp;</div>
+			</td>
+			<td><span class="bordered-img"><img alt="" src="getattachment/Home/_MG_1524c780.jpg?lang=en-US&amp;width=300&amp;height=199" style="width: 300px; height: 199px;" /></span>
+			<div style="text-align: center;">&nbsp;</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+We also have a team of fabricators (or installers) who are an important part of the stone selection process. They are thoroughly vetted, nationwide fabricators to help you with your project.</div>
+        
+    </div>
+</div>
+
+    </div>
+
+    
+    
+<footer>
+    <div class="container">
+        <div class="top">
+            <div class="logo col-md-3"><a href="index.html"><img src="App/Images/logo.png" /></a></div>
+            <div class="social-wrapper col-md-5">
+                <a href="https://www.facebook.com/pages/" target="_blank" class="facebook"></a>
+                
+                <a href="https://www.instagram.com/" target="_blank" class="instagram"></a>
+                
+                <a href="https://twitter.com/" target="_blank" class="twitter"></a>
+                
+                <a href="https://www.linkedin.com/" target="_blank" class="linkedin"></a>
+             
+                <a href="https://plus.google.com/" target="_blank" class="google"></a>
+            </div>
+            <div class="contact col-md-4">Call us: <a  href="">+254714362324 OR +254798688705</a></div>
+        </div>
+
+        <ul class="footer-nav">
+            <li><a href="about/career-opportunities.html">Careers</a></li>
+            <li><a href="about/contact-us.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy</a></li>
+            <li><a href="terms-conditions.html">Terms</a></li>
+          
+            
+        </ul>
+
+        <div class="copyright">
+            Tilling &amp; adhesives Solutions. All rights reserved. 
+        </div>
+    </div>
+</footer>
+
+
+    
+
+        </div>
+    
+
+<script type="text/javascript">
+	//<![CDATA[
+WebServiceCall('/cmsapi/webanalytics', 'LogHit', '{"NodeAliasPath":"/Home","DocumentCultureCode":"en-US","UrlReferrer":""}')
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='WebResource5b5b.html?d=beToSAE3vdsL1QUQUxjWdZJzn551GpTqK_FoddWhJW3dhQMI9mUsOFA--PzyDqqXP7A5XPP-8SG4Wy1aSfWGOQ2&amp;t=635875509181218729';
+WebForm_InitCallback();//]]>
+</script>
+</form>
+
+    
+    
+        <script src="App/dist/js/main.min143a.js?v=636259777699415454"></script>
+        <script src="App/dist/js/app.minec40.js?v=636259777698584902"></script>
+    
+</body>
+
+</html>
